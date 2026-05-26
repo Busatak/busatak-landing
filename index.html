@@ -331,13 +331,19 @@
     }
     .success-msg.show { display: flex; }
 
+    /* ── SECTIONS WRAPPER ── */
+    .sections-wrap {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
     /* ── FEATURES GRID ── */
     .features {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
-      max-width: 800px;
-      margin: 64px auto 0;
+      margin-top: 64px;
       opacity: 0;
       animation: fadeUp 0.6s 0.8s ease forwards;
     }
@@ -381,9 +387,7 @@
     .stats {
       display: flex;
       gap: 0;
-      max-width: 800px;
-      width: 100%;
-      margin: 48px auto 0;
+      margin-top: 48px;
       border: 1px solid var(--border);
       border-radius: 16px;
       overflow: hidden;
@@ -418,9 +422,7 @@
 
     /* ── PROBLEM SECTION ── */
     .problem {
-      max-width: 800px;
-      width: 100%;
-      margin: 80px auto 0;
+      margin-top: 80px;
       background: var(--accent2);
       border-radius: 24px;
       padding: 48px;
@@ -537,7 +539,8 @@
         <p class="form-note">بدون إزعاج. فقط وصول مبكر عند الإطلاق.</p>
       </div>
 
-      <!-- FEATURES -->
+      <!-- FEATURES / STATS / PROBLEM -->
+      <div class="sections-wrap">
       <div class="features">
         <div class="feature-card">
           <span class="feature-icon">📍</span>
@@ -597,6 +600,7 @@
           باصاتك جاي يغير ده.
         </div>
       </div>
+      </div><!-- /.sections-wrap -->
 
     </div>
   </main>
